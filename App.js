@@ -10,9 +10,7 @@ export default function App() {
       </Text> */}
       <StatusBar style="auto" />
 
-      <Button title="Press" />
-
-      <View
+      {/*  <View
         style={{
           width: 200,
           height: 200,
@@ -36,7 +34,9 @@ export default function App() {
         >
           <Text> merve</Text>
         </View>
-      </View>
+      </View> */}
+      <Button title="Press" onPress={() => alert("Pressed")} />
+      <Button title="Press" onPress={() => {}} touchSoundDisabled />
     </View>
   );
 }
