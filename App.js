@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Button, Image } from "react-native";
 
 export default function App() {
   const [count, setCount] = useState(0);
@@ -11,11 +11,17 @@ export default function App() {
         Merve Barış
       </Text> */}
       <StatusBar style="auto" />
-      <Image
-        style={{ width: 200, height: 200 }}
-        source={require("./assets/adaptive-icon.png")}
+      {/*  <Image
+        style={{ width: 300, height: 300 }}
+        source={require("./assets/mer.jpg")}
       />
-      {/*  <View
+      <Image
+        style={{ width: 300, height: 300 }}
+        source={{
+          uri: "https://media.istockphoto.com/id/653953140/tr/foto%C4%9Fraf/bali-hindu-tap%C4%B1na%C4%9F%C4%B1.jpg?s=1024x1024&w=is&k=20&c=T-FvR78bhlQ-fpOQ118udHj0aw190UKNcMKATkjxwhE=",
+        }}
+      /> */}
+      {/*  <View/Users/mervebaris/Desktop/IMG_9816.jpg
         style={{
           width: 200,
           height: 200,
