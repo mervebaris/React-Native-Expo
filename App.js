@@ -1,9 +1,21 @@
 import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
-import { StyleSheet, Text, View, Button, Image } from "react-native";
+import { StyleSheet, Text, View, Button, Image, Alert } from "react-native";
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const alertMe = () => {
+    Alert.alert("Dikakt!", "Silme işlemini onaylıyor musunuz?", [
+      {
+        text: "Evet",
+        onPress: () => alert("Silindi!"),
+      },
+      {
+        text: "İptal",
+        onPress: () => alert("İptal edildi!"),
+      },
+    ]);
+  };
   return (
     <View style={styles.container}>
       {/* <Text style={{ fontWeight: "bold", fontsize: "18", color: "pink" }}>
@@ -11,6 +23,7 @@ export default function App() {
         Merve Barış
       </Text> */}
       <StatusBar style="auto" />
+      <Button title="Press" onPress={alertMe} />
       {/*  <Image
         style={{ width: 300, height: 300 }}
         source={require("./assets/mer.jpg")}
